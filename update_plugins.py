@@ -31,6 +31,7 @@ vim-snippets https://github.com/honza/vim-snippets
 vim-surround https://github.com/tpope/vim-surround
 vim-expand-region https://github.com/terryma/vim-expand-region
 vim-multiple-cursors https://github.com/terryma/vim-multiple-cursors
+acp https://github.com/eikenberry/acp
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'

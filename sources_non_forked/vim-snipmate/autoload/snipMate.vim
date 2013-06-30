@@ -448,7 +448,14 @@ fun! s:AddScopeAliases(list)
 endf
 
 function! s:Glob(path, expr)
-	return filter(split(globpath(a:path, a:expr), "\n"), 'filereadable(v:val)')
+	let res = []
+	for p in split(a:path, ',')
+		let h = fnamemodify(a:expr, ':h')
+		if isdirectory(p . '/' . h)
+			call extend(res, split(glob(p . '/' . a:expr), "\n"))
+		endif
+	endfor
+	return filter(res, 'filereadable(v:val)')
 endfunction
 
 " returns dict of
@@ -467,7 +474,7 @@ function! snipMate#GetSnippetFiles(mustExist, scopes, trigger)
 	let paths = join(funcref#Call(s:c.snippet_dirs), ',')
 	let result = {}
 	let scopes = s:AddScopeAliases(a:scopes)
-	let trigger = escape(a:trigger, '{}*[]`')
+	let trigger = escape(a:trigger, "*[]?{}`'$")
 
 	" collect existing files
 	for scope in scopes
@@ -490,7 +497,7 @@ function! snipMate#GetSnippetFiles(mustExist, scopes, trigger)
 
 		if !a:mustExist
 			for p in split(paths, ',')
-				let p .= '/' . scope . '.snippets'
+				let p .= '/snippets/' . scope . '.snippets'
 				let result[p] = get(result, p, {'exists': 0, 'type': 'snippets'})
 			endfor
 		endif
