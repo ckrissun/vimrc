@@ -73,3 +73,12 @@
 [submodule "sources_non_forked/vim-mayansmoke"]
 	path = sources_non_forked/vim-mayansmoke
 	url = https://github.com/vim-scripts/mayansmoke.git
+[submodule "sources_non_forked/vim-autoclose"]
+	path = sources_non_forked/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "sources_non_forked/vim-cocoa"]
+	path = sources_non_forked/vim-cocoa
+	url = https://github.com/msanders/cocoa.vim.git
+[submodule "sources_non_forked/vim-tagbar"]
+	path = sources_non_forked/vim-tagbar
+	url = https://github.com/majutsushi/tagbar.git

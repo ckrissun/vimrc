@@ -128,6 +128,11 @@ set tm=500
 " Add a bit extra margin to the left
 set foldcolumn=1
 
+" Show line number
+set nu
+
+" Highlight current line
+set cursorline
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -175,9 +180,10 @@ set expandtab
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+" 1 tab == 2 spaces
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -185,6 +191,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
+set ci "C indent
 set wrap "Wrap lines
 
 
