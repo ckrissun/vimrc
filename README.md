@@ -24,6 +24,7 @@ The awesome version includes a lot of great plugins, configurations and color sc
 
 	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
 	git submodule init
+	git submodule update
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
