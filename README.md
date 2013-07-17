@@ -23,6 +23,7 @@ This is useful to install on remote servers where you don't need many plugins an
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
 	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git submodule init
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
@@ -37,6 +38,7 @@ Simply just do a git rebase!
 
     cd ~/.vim_runtime
     git pull --rebase
+    git submodule update
 
 
 ## Some screenshots
@@ -73,7 +75,10 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [taglist.vim](https://github.com/vim-scripts/taglist.vim): Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
 * [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors): Sublime Text style multiple selections for Vim, CTRL+N is remapped to CTRL+S (due to YankRing)
 * [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination.
-
+* [acp](https://github.com/eikenberry/acp): A fork of autocomplpop 2.14.1, auto-completion feature and much simpler code of autocomplpop to the alternatives
+* [autoclose](https://github.com/Townk/vim-autoclose): Enable an auto-close chars feature for you
+* [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window, ordered by class 
+* [vim-gocode](): A fork of gocode for vim, auto-completition for golang
 
 ## What color schemes are included?
 
@@ -91,7 +96,10 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [vim-bundle-mako](https://github.com/sophacles/vim-bundle-mako)
 * [vim-markdown](https://github.com/tpope/vim-markdown)
 * [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
-
+* [cocoa.vim](https://github.com/msanders/cocoa.vim): Highlights configurations file for Cocoa/Objective-C
+* [vim-golang](): Highlights configurations file for golang 
+* [vim-rails](https://github.com/tpope/vim-rails): Highlights configurations file for Rails
+* [mustache.vim](https://github.com/juvenn/mustache.vim)
 
 ## How to include your own stuff?
 
@@ -104,7 +112,7 @@ After you have installed the setup you can create **~/.vim_runtime/my_configs.vi
 You can also install your own plugins, for instance, via pathogen we can install [vim-rails](https://github.com/tpope/vim-rails):
 
 	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
+	git submodule add git://github.com/tpope/vim-rails.git sources_non_forked/vim-rails
 	
 Now you have vim-rails installed ;-)
 

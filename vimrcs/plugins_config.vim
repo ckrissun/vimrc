@@ -142,8 +142,8 @@ let g:tagbar_width=30
 autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
 
 " If using go please install the gotags program using the following
-"         " go install github.com/jstemmer/gotags
-"                 " And make sure gotags is in your path
+" go install github.com/jstemmer/gotags
+" And make sure gotags is in your path
 let g:tagbar_type_go = {
             \ 'ctagstype' : 'go',
             \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
