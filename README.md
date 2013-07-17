@@ -77,7 +77,7 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [vim-expand-region](https://github.com/terryma/vim-expand-region): Allows you to visually select increasingly larger regions of text using the same key combination.
 * [acp](https://github.com/eikenberry/acp): A fork of autocomplpop 2.14.1, auto-completion feature and much simpler code of autocomplpop to the alternatives
 * [autoclose](https://github.com/Townk/vim-autoclose): Enable an auto-close chars feature for you
-* [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window, ordered by class 
+* [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window, ordered by class(install gotags to support golang-tags)
 * [gocode.vim](https://github.com/golangtw/gocode.vim.git): Auto-completion for golang
 
 ## What color schemes are included?
