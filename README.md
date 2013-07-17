@@ -78,6 +78,7 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [acp](https://github.com/eikenberry/acp): A fork of autocomplpop 2.14.1, auto-completion feature and much simpler code of autocomplpop to the alternatives
 * [autoclose](https://github.com/Townk/vim-autoclose): Enable an auto-close chars feature for you
 * [tagbar](https://github.com/majutsushi/tagbar): Displays tags in a window, ordered by class 
+* [gocode.vim](https://github.com/golangtw/gocode.vim.git): Auto-completion for golang
 
 ## What color schemes are included?
 
@@ -96,7 +97,7 @@ I recommend reading the docs of these plugins to understand them better. Each of
 * [vim-markdown](https://github.com/tpope/vim-markdown)
 * [nginx.vim](https://github.com/vim-scripts/nginx.vim): Highlights configuration files for nginx
 * [cocoa.vim](https://github.com/msanders/cocoa.vim): Highlights configurations file for Cocoa/Objective-C
-* [vim-golang](https://github.com/fsouza/go.vim.git): Highlights and auto-completion configurations file for golang 
+* [vim-golang](https://github.com/jnwhiteh/vim-golang): Highlights configurations file for golang 
 * [vim-rails](https://github.com/tpope/vim-rails): Highlights configurations file for Rails
 * [mustache.vim](https://github.com/juvenn/mustache.vim)
 
