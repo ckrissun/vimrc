@@ -119,7 +119,7 @@ let g:acp_behaviorGoOmniLength=1  "acp for golang
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => taglist 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let Tlist_Ctags_Cmd='ctags'
 let Tlist_Show_One_File=1
 let Tlist_OnlyWindow=1
 let Tlist_Use_Right_Window=0
@@ -136,7 +136,7 @@ map <silent> <leader>tl :TlistToggle<CR>
 " => tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <silent> <leader>tb :TagbarToggle<cr>
-let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+let g:tagbar_ctags_bin='ctags'
 let g_tagbar_autofocus=1
 let g:tagbar_width=30
 autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.go call tagbar#autoopen()
