@@ -97,3 +97,9 @@
 [submodule "sources_non_forked/vim-json"]
 	path = sources_non_forked/vim-json
 	url = https://github.com/leshill/vim-json.git
+[submodule "sources_non_forked/vim-csupport"]
+	path = sources_non_forked/vim-csupport
+	url = https://github.com/vim-scripts/c.vim.git
+[submodule "sources_non_forked/vim-txt"]
+	path = sources_non_forked/vim-txt
+	url = https://github.com/vim-scripts/txt.vim.git
