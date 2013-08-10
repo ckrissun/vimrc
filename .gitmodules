@@ -103,3 +103,9 @@
 [submodule "sources_non_forked/vim-txt"]
 	path = sources_non_forked/vim-txt
 	url = https://github.com/vim-scripts/txt.vim.git
+[submodule "sources_non_forked/vim-funcoo"]
+	path = sources_non_forked/vim-funcoo
+	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "sources_non_forked/vim-dash"]
+	path = sources_non_forked/vim-dash
+	url = https://github.com/rizzatti/dash.vim.git
