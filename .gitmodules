@@ -48,7 +48,7 @@
 	url = https://github.com/groenewege/vim-less.git
 [submodule "sources_non_forked/vim-markdown"]
 	path = sources_non_forked/vim-markdown
-	url = https://github.com/groenewege/vim-less.git
+	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "sources_non_forked/vim-pyte"]
 	path = sources_non_forked/vim-pyte
 	url = https://github.com/therubymug/vim-pyte
