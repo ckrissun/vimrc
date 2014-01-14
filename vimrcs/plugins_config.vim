@@ -113,3 +113,26 @@ let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
 nnoremap <silent> <leader>z :Goyo<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Supertab 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabDefaultCompletionType="context"
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_ignore_files=[".*\.py$"]
+let g:syntastic_error_symbol = '✗'        " Set error or warning signs
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_enable_balloons = 1       " Whether to show balloons
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Indent_guide
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_enable_on_vim_startup = 1

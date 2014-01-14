@@ -37,6 +37,15 @@ goyo.vim https://github.com/junegunn/goyo.vim
 vim-zenroom2 https://github.com/amix/vim-zenroom2
 vim-golang https://github.com/jnwhiteh/vim-golang
 vim-gocode https://github.com/Blackrush/vim-gocode
+vim-autoclose https://github.com/Townk/vim-autoclose
+vim-bufferline https://github.com/bling/vim-bufferline
+vim-easymotion https://github.com/Lokaltog/vim-easymotion
+vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
+vim-over https://github.com/osyo-manga/vim-over
+supertab https://github.com/ervandew/supertab
+nerdcommenter https://github.com/scrooloose/nerdcommenter
+syntastic https://github.com/scrooloose/syntastic
+tabular https://github.com/godlygeek/tabular
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
