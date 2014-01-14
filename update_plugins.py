@@ -35,6 +35,8 @@ vim-fugitive https://github.com/tpope/vim-fugitive
 vim-airline https://github.com/bling/vim-airline
 goyo.vim https://github.com/junegunn/goyo.vim
 vim-zenroom2 https://github.com/amix/vim-zenroom2
+vim-golang https://github.com/jnwhiteh/vim-golang
+vim-gocode https://github.com/Blackrush/vim-gocode
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'

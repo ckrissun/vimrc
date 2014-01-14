@@ -52,3 +52,9 @@ function! CoffeeScriptFold()
     setl foldlevelstart=1
 endfunction
 au FileType coffee call CoffeeScriptFold()
+
+
+""""""""""""""""""""""""""""""
+" => Golang section
+"""""""""""""""""""""""""""""""
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
