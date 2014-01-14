@@ -46,6 +46,7 @@ supertab https://github.com/ervandew/supertab
 nerdcommenter https://github.com/scrooloose/nerdcommenter
 syntastic https://github.com/scrooloose/syntastic
 tabular https://github.com/godlygeek/tabular
+neocomplcache.vim https://github.com/Shougo/neocomplcache.vim
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'

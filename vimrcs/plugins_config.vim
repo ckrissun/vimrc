@@ -110,29 +110,42 @@ let g:airline_theme="luna"
 " => Vimroom
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
+let g:goyo_margin_top=2
+let g:goyo_margin_bottom=2
 nnoremap <silent> <leader>z :Goyo<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Supertab 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType="context"
+let g:SuperTabDefaultCompletionType="<c-x><c-o>"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
-let g:syntastic_error_symbol = '✗'        " Set error or warning signs
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_enable_balloons = 1       " Whether to show balloons
+let g:syntastic_error_symbol='✗'        " Set error or warning signs
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_balloons=1       " Whether to show balloons
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Indent_guide
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:indent_guides_start_level = 2
-let g:indent_guides_guide_size = 1
-let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+let g:indent_guides_enable_on_vim_startup=1
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Neocomplcache
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:acp_enableAtStartup=0
+let g:neocomplcache_enable_at_startup=1
+let g:neocomplcache_enable_camel_case_completion=1
+let g:neocomplcache_enable_smart_case=1
+let g:neocomplcache_enable_underbar_completion=1
+let g:neocomplcache_enable_auto_delimiter=1
+let g:neocomplcache_max_list=15
+let g:neocomplcache_force_overwrite_completefunc=1
