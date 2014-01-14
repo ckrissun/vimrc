@@ -42,11 +42,10 @@ vim-bufferline https://github.com/bling/vim-bufferline
 vim-easymotion https://github.com/Lokaltog/vim-easymotion
 vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
 vim-over https://github.com/osyo-manga/vim-over
-supertab https://github.com/ervandew/supertab
+neocomplcache.vim https://github.com/Shougo/neocomplcache.vim
 nerdcommenter https://github.com/scrooloose/nerdcommenter
 syntastic https://github.com/scrooloose/syntastic
 tabular https://github.com/godlygeek/tabular
-neocomplcache.vim https://github.com/Shougo/neocomplcache.vim
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'
