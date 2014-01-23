@@ -44,8 +44,10 @@ vim-indent-guides https://github.com/nathanaelkane/vim-indent-guides
 vim-over https://github.com/osyo-manga/vim-over
 neocomplcache.vim https://github.com/Shougo/neocomplcache.vim
 nerdcommenter https://github.com/scrooloose/nerdcommenter
+numbers.vim https://github.com/myusuf3/numbers.vim
 syntastic https://github.com/scrooloose/syntastic
 tabular https://github.com/godlygeek/tabular
+tagbar https://github.com/majutsushi/tagbar
 """.strip()
 
 GITHUB_ZIP = '%s/archive/master.zip'

@@ -116,12 +116,6 @@ nnoremap <silent> <leader>z :Goyo<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Supertab 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:SuperTabDefaultCompletionType="<c-x><c-o>"
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => syntastic
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:syntastic_ignore_files=[".*\.py$"]
@@ -170,6 +164,7 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+autocmd FileType go setlocal omnifunc=gocomplete#Complete
 
 " Enable heavy omni completion.
 if !exists('g:neocomplcache_omni_patterns')
@@ -181,3 +176,28 @@ let g:neocomplcache_omni_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 let g:neocomplcache_omni_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\h\w*\|\h\w*::'
 let g:neocomplcache_omni_patterns.go = '\h\w*\.'
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => tagbar
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <silent> <leader>tb :TagbarToggle<cr>
+let g:tagbar_ctags_bin='ctags'
+let g_tagbar_autofocus=1
+let g:tagbar_width=30
+autocmd BufReadPost *.cpp,*.c,*.h,*.hpp,*.cc,*.cxx,*.cs,*.go call tagbar#autoopen()
+
+" If using go please install the gotags program using the following
+" go get -u github.com/jstemmer/gotags
+" And make sure gotags is in your path
+let g:tagbar_type_go = {
+            \ 'ctagstype' : 'go',
+            \ 'kinds'     : [  'p:package', 'i:imports:1', 'c:constants', 'v:variables',
+                \ 't:types',  'n:interfaces', 'w:fields', 'e:embedded', 'm:methods',
+                \ 'r:constructor', 'f:functions' ],
+            \ 'sro' : '.',
+            \ 'kind2scope' : { 't' : 'ctype', 'n' : 'ntype' },
+            \ 'scope2kind' : { 'ctype' : 't', 'ntype' : 'n' },
+            \ 'ctagsbin'  : 'gotags',
+            \ 'ctagsargs' : '-sort -silent'
+            \ }
