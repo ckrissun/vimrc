@@ -87,7 +87,7 @@
 	url = https://github.com/jnwhiteh/vim-golang.git
 [submodule "sources_non_forked/vim-gocode"]
 	path = sources_non_forked/vim-gocode
-	url = https://github.com/golangtw/gocode.vim.git
+	url = https://github.com/Blackrush/vim-gocode.git
 [submodule "sources_non_forked/vim-supertab"]
 	path = sources_non_forked/vim-supertab
 	url = https://github.com/ervandew/supertab.git
@@ -115,3 +115,6 @@
 [submodule "sources_non_forked/vim-toml"]
 	path = sources_non_forked/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule "sources_non_forked/numbers.vim"]
+	path = sources_non_forked/numbers.vim
+	url = https://github.com/myusuf3/numbers.vim.git
