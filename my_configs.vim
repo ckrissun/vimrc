@@ -47,3 +47,12 @@ let NERDTreeMouseMode=2
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Syntastic
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:syntastic_ignore_files=[".*\.py$","go"]
+let g:syntastic_error_symbol='✗'        " Set error or warning signs
+let g:syntastic_warning_symbol='⚠'
+let g:syntastic_enable_balloons=1       " Whether to show balloons
